@@ -1,0 +1,172 @@
+/* Noir de salle : fond noir, menu vert centré en haut (mots séparés par « • »),
+   chaque projet en une ligne : titre en capitales blanches puis trois photogrammes
+   carrés bord à bord. Signature verte fixée en bas à droite.
+   Un seul univers sombre, assumé. */
+:root {
+  --noir: #000000;
+  --blanc: #ffffff;
+  --vert: #39ff14;
+  --gris: #9a9a9a;
+  --sans: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--noir); color: var(--blanc); font-family: var(--sans); font-size: 15px; line-height: 1.4; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+:focus-visible { outline: 1px solid var(--vert); outline-offset: 3px; }
+img { max-width: 100%; display: block; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Menu */
+.menu {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 4px 0;
+  padding: 18px max(16px, env(safe-area-inset-right, 0px)) 16px max(16px, env(safe-area-inset-left, 0px));
+  font-size: clamp(17px, 1.8vw, 26px); font-weight: 600; color: var(--vert);
+  background: linear-gradient(var(--noir) 70%, rgba(0, 0, 0, 0));
+}
+#categories { display: contents; }
+.menu a { padding: 0 2px; }
+.menu a + a::before, #categories + a::before { content: "•"; display: inline-block; margin: 0 14px; color: var(--vert); }
+#categories:empty + a::before { content: none; }
+.menu a:hover, .menu a[aria-current="page"] { color: var(--blanc); }
+.menu a:hover::before, .menu a[aria-current="page"]::before { color: var(--vert); }
+
+/* Signature fixe */
+.signature {
+  position: fixed; z-index: 6; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+  display: flex; align-items: center; gap: 10px; color: var(--vert);
+}
+.mono { font-weight: 700; font-size: 46px; line-height: .8; letter-spacing: -.12em; padding-right: .1em; }
+.texte-sig { display: grid; line-height: 1.05; font-size: 17px; }
+.texte-sig b { font-weight: 600; font-size: 21px; text-transform: lowercase; }
+.texte-sig span { text-transform: lowercase; }
+.signature:hover { color: var(--blanc); }
+
+/* Lignes de projets */
+.liste { display: grid; gap: 16px; padding-bottom: 90px; }
+.ligne { display: block; }
+.ligne h2 { margin: 0 0 6px; padding-left: max(0px, env(safe-area-inset-left, 0px)); font-size: clamp(13px, 1.35vw, 19px); font-weight: 600; text-transform: uppercase; letter-spacing: .01em; line-height: 1.1; }
+.trois { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px; }
+.cadre { position: relative; display: block; aspect-ratio: 1 / 1; overflow: hidden; background: #0d0d0d; max-width: 100%; }
+.cadre img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease, filter .4s; }
+.ligne:hover .cadre img { transform: scale(1.03); }
+.ligne:hover h2 { color: var(--vert); }
+.liste:has(.ligne:hover) .ligne:not(:hover) .cadre { opacity: .55; transition: opacity .3s; }
+
+/* Aplats de lumière en attendant les photogrammes */
+.attente::after {
+  content: ""; position: absolute; inset: 0; opacity: .5; mix-blend-mode: overlay;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)'/%3E%3C/svg%3E");
+}
+.t0 { background: radial-gradient(circle at 70% 30%, #e6c24a 0 14%, transparent 15%), linear-gradient(170deg, #9bc64a, #3e6a1e 60%, #13240a); }
+.t1 { background: radial-gradient(ellipse at 40% 80%, #6b2f8f, transparent 60%), linear-gradient(180deg, #0f1f3d, #3b5c9a 55%, #a7b6d8); }
+.t2 { background: linear-gradient(95deg, transparent 30%, rgba(255, 180, 60, .55) 31% 38%, transparent 39%), linear-gradient(180deg, #2a0805, #9b1d12 50%, #e2582a); }
+.t3 { background: radial-gradient(ellipse at 50% 120%, #4d7a3a, transparent 60%), linear-gradient(180deg, #4d6b8a, #7f9b6a 60%, #2b3b1c); }
+.t4 { background: repeating-linear-gradient(90deg, rgba(220, 230, 90, .35) 0 6px, transparent 6px 18px), linear-gradient(180deg, #1c3a12, #5f8c22 50%, #0c1a07); }
+.t5 { background: radial-gradient(circle at 30% 40%, rgba(255, 240, 210, .8), transparent 30%), linear-gradient(200deg, #1a1a1a, #4a3a2a 50%, #0a0a0a); }
+
+/* Page d'un projet */
+.projet { padding: 10px max(16px, env(safe-area-inset-right, 0px)) 110px max(16px, env(safe-area-inset-left, 0px)); }
+.credits { text-align: center; font-size: clamp(13px, 1.25vw, 17px); font-weight: 600; margin: 4px auto 26px; max-width: 70em; }
+.credits p { margin: 0 0 4px; }
+.credits .desc { font-weight: 400; color: var(--gris); margin-top: 10px; }
+.ecran { position: relative; max-width: 1180px; margin: 0 auto 26px; aspect-ratio: 16 / 9; background: #0d0d0d; }
+.ecran iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.lien-ext { text-align: center; margin: 0 0 26px; }
+.lien-ext a, .retour a { color: var(--vert); font-weight: 600; }
+.lien-ext a:hover, .retour a:hover { color: var(--blanc); }
+.projet .trois { max-width: 1180px; margin: 0 auto; }
+.retour { text-align: center; margin: 28px 0 0; }
+.vide { text-align: center; color: var(--gris); padding: 40px 16px; }
+
+/* À propos et contact */
+.page-texte {
+  max-width: 760px; margin: 0 auto; text-align: center; font-weight: 600; font-size: clamp(15px, 1.4vw, 19px);
+  padding: 16px max(16px, env(safe-area-inset-right, 0px)) 130px max(16px, env(safe-area-inset-left, 0px));
+}
+.bio p { margin: 0 0 1em; }
+.portrait { width: 220px; aspect-ratio: 1; object-fit: cover; margin: 0 auto 24px; }
+.services { list-style: none; padding: 0; margin: 30px 0 0; display: grid; gap: 6px; color: var(--gris); font-weight: 400; }
+.services b { color: var(--blanc); font-weight: 600; }
+.contact { padding-top: 12vh; }
+.contact p { margin: 0 0 14px; }
+.mail { display: inline-block; color: var(--vert); font-size: clamp(24px, 4.5vw, 52px); font-weight: 600; margin-bottom: 14px; overflow-wrap: anywhere; }
+.mail:hover { color: var(--blanc); }
+.copier { font: inherit; font-size: 14px; background: none; border: 0; color: var(--gris); cursor: pointer; padding: 0; }
+.copier:hover { color: var(--blanc); }
+.liens { display: flex; justify-content: center; flex-wrap: wrap; gap: 4px 0; color: var(--vert); }
+.liens a + a::before { content: "•"; display: inline-block; margin: 0 12px; }
+.liens a:hover { color: var(--blanc); }
+
+@media (max-width: 700px) {
+  .mono { font-size: 34px; }
+  .texte-sig { font-size: 12px; }
+  .texte-sig b { font-size: 15px; }
+  .menu a + a::before, #categories + a::before { margin: 0 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .cadre img { transition: none; } }
+
+/* ───── Typographie « affiche de conférence » ─────
+   Capitales à empattements très espacées (Libre Caslon Display), serif étroit pour les listes
+   (Instrument Serif), machine à écrire qui tourne en orbite (Courier Prime),
+   petit mono pixelisé pour les mentions (Silkscreen), lettres grecques en ornement. */
+:root {
+  --affiche: "Libre Caslon Display", "Times New Roman", serif;
+  --etroit: "Instrument Serif", "Times New Roman", serif;
+  --machine: "Courier Prime", "Courier New", monospace;
+  --pixel: "Silkscreen", "Courier New", monospace;
+}
+body { font-family: var(--etroit); font-size: 18px; }
+
+/* Menu : capitales espacées, séparées par des ornements */
+.menu { font-family: var(--affiche); font-weight: 400; font-size: clamp(15px, 1.5vw, 21px); letter-spacing: .38em; text-transform: none; }
+.menu a { padding: 0; }
+.menu a + a::before, #categories + a::before { content: "ξ"; font-family: var(--etroit); font-style: italic; letter-spacing: 0; margin: 0 16px 0 10px; font-size: 1.25em; }
+#categories a:nth-child(3n+2)::before { content: "ζ"; }
+#categories a:nth-child(3n)::before { content: "@"; font-family: var(--machine); font-style: normal; font-size: .9em; }
+
+/* Titres des projets : serif étroit, minuscules, comme une ligne de programme */
+.ligne h2 { font-family: var(--etroit); font-weight: 400; text-transform: none; font-size: clamp(20px, 2vw, 28px); letter-spacing: -.005em; margin-bottom: 4px; }
+.ligne h2::after { content: " →"; font-family: var(--machine); font-size: .6em; color: var(--vert); opacity: 0; transition: opacity .2s; }
+.ligne:hover h2::after { opacity: 1; }
+
+/* Page projet : crédits à la machine à écrire */
+.credits { font-family: var(--machine); font-weight: 400; font-size: clamp(12px, 1.05vw, 15px); letter-spacing: .02em; }
+.credits p:first-child { font-family: var(--affiche); font-size: clamp(22px, 3vw, 40px); letter-spacing: .3em; margin-bottom: 14px; line-height: 1.15; }
+.credits .desc { font-family: var(--etroit); font-style: italic; font-size: 19px; letter-spacing: 0; }
+.lien-ext a, .retour a { font-family: var(--machine); font-weight: 400; }
+
+/* Signature : ornement grec, nom espacé, métier à la machine en orbite */
+.signature { gap: 30px; }
+.mono { position: relative; display: grid; place-items: center; height: 60px; }
+.orbite { position: absolute; left: 50%; top: 50%; width: 112px; height: 112px; margin: -56px 0 0 -56px; overflow: visible; animation: orbite 40s linear infinite; pointer-events: none; }
+.orbite text { font-family: var(--machine); font-size: 8.6px; letter-spacing: .06em; fill: var(--vert); }
+@keyframes orbite { to { transform: rotate(360deg); } }
+.mono { font-family: var(--etroit); font-style: italic; font-weight: 400; font-size: 60px; letter-spacing: 0; width: 40px; text-align: center; }
+.texte-sig b { font-family: var(--affiche); font-weight: 400; font-size: 18px; letter-spacing: .3em; text-transform: none; }
+.mention { font-family: var(--pixel); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+
+/* À propos et contact */
+.page-texte { font-family: var(--etroit); font-weight: 400; font-size: clamp(19px, 1.9vw, 25px); line-height: 1.3; }
+.services { font-family: var(--machine); font-size: 14px; }
+.services b { font-family: var(--etroit); font-size: 21px; font-weight: 400; }
+.contact > p:first-of-type { font-family: var(--pixel); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--gris); }
+.mail { font-family: var(--affiche); font-weight: 400; font-size: clamp(18px, 3.4vw, 40px); letter-spacing: .14em; }
+.copier { font-family: var(--machine); }
+.liens { font-family: var(--affiche); letter-spacing: .3em; font-size: 17px; }
+.liens a + a::before { content: "ζ"; font-family: var(--etroit); font-style: italic; letter-spacing: 0; }
+.vide { font-family: var(--machine); font-size: 14px; }
+
+@media (max-width: 700px) {
+  .menu { letter-spacing: .22em; font-size: 14px; }
+  .menu a + a::before, #categories + a::before { margin: 0 8px 0 4px; }
+  .orbite { width: 86px; height: 86px; margin: -43px 0 0 -43px; }
+  .signature { gap: 22px; }
+  .mono { font-size: 46px; width: 30px; }
+  .texte-sig b { font-size: 13px; letter-spacing: .18em; }
+}
+@media (prefers-reduced-motion: reduce) { .orbite { animation: none; } }
+.signature { gap: 46px; bottom: calc(40px + env(safe-area-inset-bottom, 0px)); right: max(24px, env(safe-area-inset-right, 0px)); }
+@media (max-width: 700px) { .signature { gap: 34px; bottom: calc(30px + env(safe-area-inset-bottom, 0px)); } }
