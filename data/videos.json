@@ -43,7 +43,10 @@
       "categorie": "Gaffer",
       "role": "Chef électricien",
       "credits": "Lysa Thieffry · LEFT",
-      "description": "Film de mode, 1 min 56."
+      "description": "Film de mode, 1 min 56.",
+      "images": [
+        "/media/beauty-arena-portrait.jpg"
+      ]
     },
     {
       "titre": "James Loup, J'voulais être grand",
