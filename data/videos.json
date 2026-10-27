@@ -29,6 +29,7 @@
       "annee": "2023",
       "categorie": "Gaffer",
       "role": "Chef électricien",
+      "description": "Réalisé par Titouan Ropert\n\nProduit par Marisol Crisan & Shaeera Kalla",
       "images": [
         "/media/plein-cagnard-1.jpg",
         "/media/Capture d’écran 2025-02-21 à 09.40.10.png",
@@ -47,8 +48,9 @@
     {
       "titre": "James Loup, J'voulais être grand",
       "lien": "https://www.youtube.com/watch?v=TOdioWajzaw",
-      "categorie": "Cinematographer",
-      "credits": "prod. Ushi"
+      "annee": "2025",
+      "categorie": "Gaffer",
+      "role": "Chef électricien"
     },
     {
       "titre": "James Loup, Tqt pas j'suis dans l'Uber",
