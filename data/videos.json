@@ -61,61 +61,10 @@
     {
       "titre": "Ange Halliwell, Spirit are you here ?",
       "lien": "https://www.youtube.com/watch?v=ubqZfBmJFI0",
-      "categorie": "Cinematographer"
-    },
-    {
-      "titre": "Trajet de Nuit",
-      "annee": "2024",
-      "categorie": "Gaffer",
-      "role": "Électro",
-      "description": "Court métrage. Département caméra et électrique."
-    },
-    {
-      "titre": "L'invulnérable",
-      "annee": "2023",
-      "categorie": "Gaffer",
-      "role": "Électro",
-      "description": "Court métrage."
-    },
-    {
-      "titre": "Si loin mes soeurs",
-      "annee": "2020",
-      "categorie": "Gaffer",
-      "role": "Électro",
-      "description": "Court métrage."
-    },
-    {
-      "titre": "Jordan × Quai 54, Nadir",
-      "lien": "https://www.instagram.com/p/DZ2AuHLDcqH/",
-      "annee": "2026",
-      "categorie": "Photography",
-      "role": "Assistant lumière",
-      "credits": "Photographie : Yoann Guerini\nStylisme : jaadedk\nProduction : Spice Club, Deux Yeux",
-      "description": "Séance photo pour Jordan et le Quai 54."
-    },
-    {
-      "titre": "Rose Davies, séance photo",
-      "lien": "https://www.instagram.com/p/DNiHMwsMomH/",
       "annee": "2025",
-      "categorie": "Photography",
-      "role": "Lumière et décor",
-      "credits": "Photographie et design visuel : Rose Davies\nDirection artistique : sentiment3k"
-    },
-    {
-      "titre": "Damna, Getting Close",
-      "lien": "https://damna.bandcamp.com/album/getting-close",
-      "annee": "2023",
-      "categorie": "Photography",
-      "role": "Lumière",
-      "description": "Lumière de la séance photo de l'album."
-    },
-    {
-      "titre": "Hupsylon, Dog Block EP",
-      "lien": "https://hupsylonmusic.bandcamp.com/album/dog-block-ep",
-      "annee": "2019",
-      "categorie": "Photography",
-      "role": "Visuel",
-      "description": "Visuel de l'EP, avec Trois-Quarts Taxi System et Chien Colère."
+      "categorie": "Gaffer",
+      "role": "Chef électricien",
+      "credits": "Directed by Roxanne Gaucherand\n\nProduction Company: PRISM"
     }
   ]
 }
