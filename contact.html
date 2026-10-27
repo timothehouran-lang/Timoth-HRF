@@ -3,31 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Contact · Timothé Hourant</title>
-<meta name="description" content="Timothé Hourant, vidéaste et chef électro à Paris.">
+<title>Contact · Timothé Hourant Faivre</title>
+<meta name="description" content="Timothé Hourant Faivre, director of photography et gaffer à Paris.">
 <script>try{var t=localStorage.getItem("theme");if(t==="jour")document.documentElement.dataset.theme=t}catch(e){}</script>
-<link rel="stylesheet" href="assets/style.css?v=4">
+<link rel="stylesheet" href="assets/style.css?v=5">
 </head>
 <body data-page="contact">
-<button type="button" class="bascule" id="bascule" aria-label="passer en mode jour">jour</button>
-<nav class="menu" aria-label="navigation">
-  <span id="categories"></span>
-  <a href="a-propos.html">à propos</a>
-  <a href="contact.html" aria-current="page">contact</a>
-</nav>
-<a class="signature" href="index.html">
-  <b data-site="nom">Timothé Hourant</b>
-  <span class="mention">director of photography / gaffer</span>
-</a>
+<header class="haut">
+  <div class="haut-gauche">
+    <a href="index.html" class="ligne-nom" data-site="nom">Timothé Hourant Faivre</a>
+    <span class="ligne-metier">director of photography / gaffer</span>
+    <nav class="filtres" aria-label="catégories"><span id="categories"></span></nav>
+  </div>
+  <div class="haut-droite">
+    <nav class="pages" aria-label="pages">
+      <a href="a-propos.html">à propos</a>
+      <a href="contact.html" aria-current="page">contact</a>
+    </nav>
+    <button type="button" class="bascule" id="bascule" aria-label="passer en mode jour">jour</button>
+  </div>
+</header>
 <main>
   <div class="page-texte contact">
     <h1 class="sr">Contact</h1>
-    <p>pour un tournage, un clip ou une séance photo</p>
+    <p class="petit">pour un tournage, un clip ou une séance photo</p>
     <a class="mail" id="mail" href="mailto:"></a>
     <p><button type="button" class="copier" id="copier">copier l'adresse</button></p>
     <p class="liens" id="liens"></p>
   </div>
 </main>
-<script src="assets/site.js?v=4"></script>
+<footer class="bas">© 2026 <span data-site="nom">Timothé Hourant Faivre</span></footer>
+<script src="assets/site.js?v=5"></script>
 </body>
 </html>

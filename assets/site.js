@@ -42,6 +42,14 @@
     return out.join('');
   }
 
+  // Une seule vignette par projet pour la grille : la première image disponible
+  function une(v) {
+    var choisies = (v.images || []).map(function (x) { return chemin(x && x.image ? x.image : x); }).filter(Boolean);
+    var vid = video(v.lien);
+    var src = choisies[0] || (vid && vid.images.length ? vid.images[0].replace('/hq1.jpg', '/hqdefault.jpg') : '');
+    return src ? '<img src="' + esc(src) + '" alt="" loading="lazy">' : '<span class="attente t' + (v._i % 6) + '" aria-hidden="true"></span>';
+  }
+
   function charger(p) {
     return fetch(p, { cache: 'no-cache' }).then(function (r) {
       if (!r.ok) throw new Error(p);
@@ -95,9 +103,9 @@
     function lignes() {
       var l = videos.filter(function (v) { return !filtre || v._cat === filtre; });
       liste.innerHTML = l.length ? l.map(function (v) {
-        return '<a class="ligne" href="#' + v._id + '" data-id="' + v._id + '">' +
-          '<h2>' + esc(v.titre) + '</h2>' +
-          '<span class="trois">' + trois(v) + '</span></a>';
+        return '<a class="carte" href="#' + v._id + '" data-id="' + v._id + '">' +
+          '<span class="vignette-img">' + une(v) + '</span>' +
+          '<span class="legende">' + esc(v.titre) + '</span></a>';
       }).join('') : '<p class="vide">aucune vidéo pour l\'instant. ajoute ta première vidéo dans pages cms, rubrique vidéos.</p>';
       zone.querySelectorAll('a').forEach(function (a) {
         if (a.dataset.cat === filtre) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
@@ -133,7 +141,7 @@
     }
 
     liste.addEventListener('click', function (e) {
-      var a = e.target.closest('a.ligne');
+      var a = e.target.closest('a.carte');
       if (!a) return;
       e.preventDefault();
       try { history.pushState(null, '', '#' + a.dataset.id); } catch (er) {}
@@ -161,10 +169,10 @@
   // Une image qui ne charge pas laisse place à un aplat de lumière
   document.addEventListener('error', function (e) {
     var im = e.target;
-    if (im.tagName !== 'IMG' || !im.parentNode || !im.parentNode.classList.contains('cadre')) return;
-    var n = Math.abs((im.src || '').length) % 6;
-    im.parentNode.classList.add('attente', 't' + n);
-    im.remove();
+    if (im.tagName !== 'IMG' || !im.parentNode) return;
+    var p = im.parentNode;
+    if (p.classList.contains('cadre')) { p.classList.add('attente'); im.remove(); }
+    else if (p.classList.contains('vignette-img')) { p.innerHTML = '<span class="attente" aria-hidden="true"></span>'; }
   }, true);
 
   // Jour / nuit : bouton en haut à droite, choix mémorisé dans le navigateur
