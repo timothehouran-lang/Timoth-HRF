@@ -44,7 +44,7 @@ img { display: block; max-width: 100%; }
   padding: 20px 20px 0;
 }
 .haut-gauche { display: flex; flex-direction: column; gap: 1px; line-height: 1.05; }
-.ligne-nom { font-weight: 700; }
+.ligne-nom { font-weight: 400; }
 .ligne-metier { color: var(--doux); margin-bottom: 10px; }
 .filtres #categories { display: flex; flex-direction: column; gap: 1px; }
 .haut-droite { display: flex; align-items: center; gap: 16px; }
