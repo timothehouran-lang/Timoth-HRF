@@ -1,0 +1,160 @@
+{
+  "videos": [
+    {
+      "titre": "Bande démo chef opérateur",
+      "lien": "https://www.youtube.com/watch?v=ddY8BIe4M6E",
+      "annee": "",
+      "categorie": "Bande démo",
+      "role": "Chef opérateur",
+      "credits": "",
+      "description": "Extraits de mon travail à l'image.",
+      "images": [
+        "media/demo-1.jpg",
+        "media/demo-2.jpg",
+        "media/demo-3.jpg"
+      ]
+    },
+    {
+      "titre": "Laissez-moi danser",
+      "lien": "https://vimeo.com/1024720930/4d090098b4",
+      "annee": "",
+      "categorie": "Fiction",
+      "role": "",
+      "credits": "Réalisation : Lou Zidi",
+      "description": "Court métrage, 22 min.",
+      "images": [
+        "media/laissez-moi-danser-1.jpg",
+        "media/laissez-moi-danser-2.jpg",
+        "media/laissez-moi-danser-3.jpg"
+      ]
+    },
+    {
+      "titre": "Plein Cagnard",
+      "lien": "https://vimeo.com/1022115270",
+      "annee": "",
+      "categorie": "Fiction",
+      "role": "",
+      "credits": "",
+      "description": "Court métrage. Vidéo protégée par mot de passe sur Vimeo.",
+      "images": [
+        "media/plein-cagnard-1.jpg",
+        "media/plein-cagnard-2.jpg",
+        "media/plein-cagnard-3.jpg"
+      ]
+    },
+    {
+      "titre": "Beauty Arena",
+      "lien": "https://vimeo.com/1122984655",
+      "annee": "",
+      "categorie": "Mode",
+      "role": "",
+      "credits": "Lysa Thieffry · LEFT",
+      "description": "Film de mode, 1 min 56.",
+      "images": [
+        "media/beauty-arena-1.jpg",
+        "media/beauty-arena-2.jpg",
+        "media/beauty-arena-3.jpg"
+      ]
+    },
+    {
+      "titre": "Jordan × Quai 54, Nadir",
+      "lien": "https://www.instagram.com/p/DZ2AuHLDcqH/",
+      "annee": "2026",
+      "categorie": "Photographie",
+      "role": "Assistant lumière",
+      "credits": "Photographie : Yoann Guerini\nStylisme : jaadedk\nProduction : Spice Club, Deux Yeux",
+      "description": "Séance photo pour Jordan et le Quai 54.",
+      "images": []
+    },
+    {
+      "titre": "Rose Davies, séance photo",
+      "lien": "https://www.instagram.com/p/DNiHMwsMomH/",
+      "annee": "2025",
+      "categorie": "Photographie",
+      "role": "Lumière et décor",
+      "credits": "Photographie et design visuel : Rose Davies\nDirection artistique : sentiment3k",
+      "description": "",
+      "images": []
+    },
+    {
+      "titre": "James Loup, J'voulais être grand",
+      "lien": "https://www.youtube.com/watch?v=TOdioWajzaw",
+      "annee": "",
+      "categorie": "Clip",
+      "role": "",
+      "credits": "prod. Ushi",
+      "description": "",
+      "images": []
+    },
+    {
+      "titre": "James Loup, Tqt pas j'suis dans l'Uber",
+      "lien": "https://www.youtube.com/watch?v=A-kn2-ZtEuU",
+      "annee": "",
+      "categorie": "Clip",
+      "role": "",
+      "credits": "prod. Ushi",
+      "description": "",
+      "images": []
+    },
+    {
+      "titre": "Ange Halliwell, Spirit are you here ?",
+      "lien": "https://www.youtube.com/watch?v=ubqZfBmJFI0",
+      "annee": "",
+      "categorie": "Clip",
+      "role": "",
+      "credits": "",
+      "description": "",
+      "images": []
+    },
+    {
+      "titre": "Trajet de Nuit",
+      "lien": "",
+      "annee": "2024",
+      "categorie": "Fiction",
+      "role": "Électro",
+      "credits": "",
+      "description": "Court métrage. Département caméra et électrique.",
+      "images": []
+    },
+    {
+      "titre": "L'invulnérable",
+      "lien": "",
+      "annee": "2023",
+      "categorie": "Fiction",
+      "role": "Électro",
+      "credits": "",
+      "description": "Court métrage.",
+      "images": []
+    },
+    {
+      "titre": "Damna, Getting Close",
+      "lien": "https://damna.bandcamp.com/album/getting-close",
+      "annee": "2023",
+      "categorie": "Pochette",
+      "role": "Lumière",
+      "credits": "",
+      "description": "Lumière de la séance photo de l'album.",
+      "images": []
+    },
+    {
+      "titre": "Si loin mes soeurs",
+      "lien": "",
+      "annee": "2020",
+      "categorie": "Fiction",
+      "role": "Électro",
+      "credits": "",
+      "description": "Court métrage.",
+      "images": []
+    },
+    {
+      "titre": "Hupsylon, Dog Block EP",
+      "lien": "https://hupsylonmusic.bandcamp.com/album/dog-block-ep",
+      "annee": "2019",
+      "categorie": "Pochette",
+      "role": "Visuel",
+      "credits": "",
+      "description": "Visuel de l'EP, avec Trois-Quarts Taxi System et Chien Colère.",
+      "images": []
+    }
+  ]
+}

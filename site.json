@@ -1,0 +1,41 @@
+{
+  "nom": "Timothé Hourant Faivre",
+  "metier": "chef opérateur, chef électricien",
+  "ville": "Paris",
+  "accroche": "Vidéaste et chef électro basé à Paris. Je travaille la lumière sur des courts métrages, des clips et des pochettes, de la préparation au plateau.",
+  "bio": "Je suis vidéaste et chef électro à Paris. Je travaille surtout sur des courts métrages, des clips et des séances photo pour des sorties musicales.\n\nSur un projet, j'interviens dès les repérages : lecture des décors, plan de feux, liste matériel. Sur le plateau, je mets en place la lumière avec l'équipe image.\n\nRemplace ce texte par ton parcours dans Pages CMS, rubrique Infos du site.",
+  "photo": "",
+  "email": "timothe.houran@gmail.com",
+  "services": [
+    {
+      "etape": "Préparation",
+      "titre": "Repérages et plan de feux",
+      "texte": "Visite des décors, liste matériel, puissance disponible."
+    },
+    {
+      "etape": "Plateau",
+      "titre": "Chef électro",
+      "texte": "Mise en place, réglages et équipe sur le tournage."
+    },
+    {
+      "etape": "Image",
+      "titre": "Clips et captations",
+      "texte": "Tournage et lumière pour artistes et labels."
+    },
+    {
+      "etape": "Photo",
+      "titre": "Lumière de pochette",
+      "texte": "Éclairage de séances photo pour sorties musicales."
+    }
+  ],
+  "liens": [
+    {
+      "nom": "IMDb",
+      "url": "https://www.imdb.com/name/nm11485784/"
+    },
+    {
+      "nom": "Instagram",
+      "url": "https://www.instagram.com/timothe_hrf/"
+    }
+  ]
+}
