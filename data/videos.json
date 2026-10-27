@@ -3,118 +3,86 @@
     {
       "titre": "Bande démo chef opérateur",
       "lien": "https://www.youtube.com/watch?v=ddY8BIe4M6E",
-      "annee": "",
       "categorie": "Showreel",
       "role": "Chef opérateur",
-      "credits": "",
       "description": "Extraits de mon travail à l'image.",
       "images": [
-        "media/demo-1.jpg",
-        "media/demo-2.jpg",
-        "media/demo-3.jpg"
+        "/media/image0-1.jpeg"
       ]
     },
     {
       "titre": "Laissez-moi danser",
       "lien": "https://vimeo.com/1024720930/4d090098b4",
-      "annee": "",
-      "categorie": "Cinematographer",
-      "role": "",
-      "credits": "Réalisation : Lou Zidi",
+      "annee": "2023",
+      "categorie": "Gaffer",
+      "role": "Chef électricien",
+      "credits": "Réalisation : Lou Zidi\nChef opératrice : Lola Loubet",
       "description": "Court métrage, 22 min.",
       "images": [
-        "media/laissez-moi-danser-1.jpg",
-        "media/laissez-moi-danser-2.jpg",
-        "media/laissez-moi-danser-3.jpg"
+        "/media/Capture d’écran 2025-01-31 à 11.37.58.png",
+        "/media/Capture d’écran 2026-10-27 à 14.34.36.png"
       ]
     },
     {
       "titre": "Plein Cagnard",
       "lien": "https://vimeo.com/1022115270",
-      "annee": "",
       "categorie": "Cinematographer",
-      "role": "",
-      "credits": "",
       "description": "Court métrage. Vidéo protégée par mot de passe sur Vimeo.",
       "images": [
-        "media/plein-cagnard-1.jpg",
-        "media/plein-cagnard-2.jpg",
-        "media/plein-cagnard-3.jpg"
+        "/media/plein-cagnard-1.jpg",
+        "/media/plein-cagnard-2.jpg",
+        "/media/plein-cagnard-3.jpg"
       ]
     },
     {
       "titre": "Beauty Arena",
       "lien": "https://vimeo.com/1122984655",
-      "annee": "",
       "categorie": "Cinematographer",
-      "role": "",
       "credits": "Lysa Thieffry · LEFT",
       "description": "Film de mode, 1 min 56.",
       "images": [
-        "media/beauty-arena-1.jpg",
-        "media/beauty-arena-2.jpg",
-        "media/beauty-arena-3.jpg"
+        "/media/beauty-arena-1.jpg",
+        "/media/beauty-arena-2.jpg",
+        "/media/beauty-arena-3.jpg"
       ]
     },
     {
       "titre": "James Loup, J'voulais être grand",
       "lien": "https://www.youtube.com/watch?v=TOdioWajzaw",
-      "annee": "",
       "categorie": "Cinematographer",
-      "role": "",
-      "credits": "prod. Ushi",
-      "description": "",
-      "images": []
+      "credits": "prod. Ushi"
     },
     {
       "titre": "James Loup, Tqt pas j'suis dans l'Uber",
       "lien": "https://www.youtube.com/watch?v=A-kn2-ZtEuU",
-      "annee": "",
       "categorie": "Cinematographer",
-      "role": "",
-      "credits": "prod. Ushi",
-      "description": "",
-      "images": []
+      "credits": "prod. Ushi"
     },
     {
       "titre": "Ange Halliwell, Spirit are you here ?",
       "lien": "https://www.youtube.com/watch?v=ubqZfBmJFI0",
-      "annee": "",
-      "categorie": "Cinematographer",
-      "role": "",
-      "credits": "",
-      "description": "",
-      "images": []
+      "categorie": "Cinematographer"
     },
     {
       "titre": "Trajet de Nuit",
-      "lien": "",
       "annee": "2024",
       "categorie": "Gaffer",
       "role": "Électro",
-      "credits": "",
-      "description": "Court métrage. Département caméra et électrique.",
-      "images": []
+      "description": "Court métrage. Département caméra et électrique."
     },
     {
       "titre": "L'invulnérable",
-      "lien": "",
       "annee": "2023",
       "categorie": "Gaffer",
       "role": "Électro",
-      "credits": "",
-      "description": "Court métrage.",
-      "images": []
+      "description": "Court métrage."
     },
     {
       "titre": "Si loin mes soeurs",
-      "lien": "",
       "annee": "2020",
       "categorie": "Gaffer",
       "role": "Électro",
-      "credits": "",
-      "description": "Court métrage.",
-      "images": []
+      "description": "Court métrage."
     },
     {
       "titre": "Jordan × Quai 54, Nadir",
@@ -123,8 +91,7 @@
       "categorie": "Photography",
       "role": "Assistant lumière",
       "credits": "Photographie : Yoann Guerini\nStylisme : jaadedk\nProduction : Spice Club, Deux Yeux",
-      "description": "Séance photo pour Jordan et le Quai 54.",
-      "images": []
+      "description": "Séance photo pour Jordan et le Quai 54."
     },
     {
       "titre": "Rose Davies, séance photo",
@@ -132,9 +99,7 @@
       "annee": "2025",
       "categorie": "Photography",
       "role": "Lumière et décor",
-      "credits": "Photographie et design visuel : Rose Davies\nDirection artistique : sentiment3k",
-      "description": "",
-      "images": []
+      "credits": "Photographie et design visuel : Rose Davies\nDirection artistique : sentiment3k"
     },
     {
       "titre": "Damna, Getting Close",
@@ -142,9 +107,7 @@
       "annee": "2023",
       "categorie": "Photography",
       "role": "Lumière",
-      "credits": "",
-      "description": "Lumière de la séance photo de l'album.",
-      "images": []
+      "description": "Lumière de la séance photo de l'album."
     },
     {
       "titre": "Hupsylon, Dog Block EP",
@@ -152,9 +115,7 @@
       "annee": "2019",
       "categorie": "Photography",
       "role": "Visuel",
-      "credits": "",
-      "description": "Visuel de l'EP, avec Trois-Quarts Taxi System et Chien Colère.",
-      "images": []
+      "description": "Visuel de l'EP, avec Trois-Quarts Taxi System et Chien Colère."
     }
   ]
 }
