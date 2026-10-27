@@ -11,16 +11,16 @@
       ]
     },
     {
-      "titre": "Laissez-moi danser",
-      "lien": "https://vimeo.com/1024720930/4d090098b4",
-      "annee": "2023",
-      "categorie": "Gaffer",
-      "role": "Chef électricien",
-      "credits": "Réalisation : Lou Zidi\nChef opératrice : Lola Loubet",
-      "description": "Court métrage, 22 min.",
+      "titre": "Feugeas",
+      "lien": "https://youtu.be/BBLrdhyamc0",
+      "annee": "2024",
+      "categorie": "Cinematographer",
+      "role": "DOP",
+      "credits": "Directed by Roxane Misse\nProduced byFatih Öztosun",
       "images": [
-        "/media/Capture d’écran 2025-01-31 à 11.37.58.png",
-        "/media/Capture d’écran 2026-10-27 à 14.34.36.png"
+        "/media/beauty-arena-portrait.jpg",
+        "/media/image-07.jpg",
+        "/media/image-08.jpg"
       ]
     },
     {
@@ -37,6 +37,19 @@
       ]
     },
     {
+      "titre": "Sosu Inn - Ghost Field",
+      "lien": "https://www.youtube.com/watch?v=6zu-xyKnjkQ&list=RD6zu-xyKnjkQ&start_radio=1",
+      "annee": "2023",
+      "categorie": "Cinematographer",
+      "role": "Director",
+      "credits": "Directed by Timothé Hourant Faivre and Quentin-Azzedine Lahjaily",
+      "images": [
+        "/media/Capture d’écran 2025-02-20 à 17.11.35.png",
+        "/media/Capture d’écran 2025-02-20 à 17.11.33.png",
+        "/media/Capture d’écran 2025-02-20 à 17.12.35.png"
+      ]
+    },
+    {
       "titre": "Beauty Arena",
       "lien": "https://vimeo.com/1122984655",
       "annee": "2024",
@@ -45,7 +58,7 @@
       "credits": "Lysa Thieffry · LEFT",
       "description": "Film de mode, 1 min 56.",
       "images": [
-        "/media/beauty-arena-portrait.jpg"
+        "/media/beauty-arena-titre.jpg"
       ]
     },
     {
@@ -55,6 +68,20 @@
       "categorie": "Gaffer",
       "role": "Chef électricien",
       "credits": "Réalisateurs: Luc Méneret et Antoine Vasseur\n\nProduit par : TIE BREAK / TRIPLE-DOUBLE / FULL OPTION"
+    },
+    {
+      "titre": "Laissez-moi danser",
+      "lien": "https://vimeo.com/1024720930/4d090098b4",
+      "annee": "2023",
+      "categorie": "Gaffer",
+      "role": "Chef électricien",
+      "credits": "Réalisation : Lou Zidi\nChef opératrice : Lola Loubet",
+      "description": "Court métrage, 22 min.",
+      "images": [
+        "/media/Capture d’écran 2025-01-31 à 11.37.58.png",
+        "/media/Capture d’écran 2026-10-27 à 14.34.36.png",
+        "/media/image-02-1.jpg"
+      ]
     },
     {
       "titre": "James Loup, Tqt pas j'suis dans l'Uber",
@@ -71,6 +98,19 @@
       "categorie": "Gaffer",
       "role": "Chef électricien",
       "credits": "Directed by Roxanne Gaucherand\n\nProduction Company: PRISM"
+    },
+    {
+      "titre": "WAVES",
+      "lien": "https://youtu.be/wFH_rosSTJM",
+      "annee": "2025",
+      "categorie": "Cinematographer",
+      "role": "DOP",
+      "credits": "Directed by Jason Mougamadou Abdullah",
+      "images": [
+        "/media/image-13.jpg",
+        "/media/image-17.jpg",
+        "/media/image-09.jpg"
+      ]
     }
   ]
 }
