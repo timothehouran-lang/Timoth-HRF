@@ -24,7 +24,7 @@ content:
             label: Catégorie
             type: select
             options:
-              values: [Bande démo, Fiction, Clip, Mode, Pochette, Captation, Documentaire, Pub, Photographie]
+              values: [Showreel, Cinematographer, Gaffer, Photography]
           - name: role
             label: Mon rôle
             type: string

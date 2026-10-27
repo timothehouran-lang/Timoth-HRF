@@ -67,11 +67,17 @@
       if (site[el.dataset.site]) el.textContent = site[el.dataset.site];
     });
 
-    var cats = [];
-    videos.forEach(function (v) { if (cats.indexOf(v._cat) < 0) cats.push(v._cat); });
+    // Ordre fixe des sections, puis les éventuelles autres catégories
+    var ORDRE = ['showreel', 'cinematographer', 'gaffer', 'photography'];
+    var cats = [], noms = {};
+    videos.forEach(function (v) { if (cats.indexOf(v._cat) < 0) { cats.push(v._cat); noms[v._cat] = v.categorie || 'Autres'; } });
+    cats.sort(function (a, b) {
+      var ia = ORDRE.indexOf(a), ib = ORDRE.indexOf(b);
+      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+    });
     var zone = document.getElementById('categories');
     zone.innerHTML = cats.map(function (c) {
-      return '<a href="index.html#' + slug(c) + '" data-cat="' + esc(c) + '">' + esc(c) + '</a>';
+      return '<a href="index.html#' + slug(c) + '" data-cat="' + esc(c) + '">' + esc(noms[c]) + '</a>';
     }).join('');
 
     if (page === 'accueil') accueil(videos, cats, zone);
