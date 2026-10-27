@@ -193,3 +193,59 @@ body { font-family: var(--etroit); font-size: 18px; }
   .menu a + a::before, #categories + a::before,
   #categories a:nth-child(3n+2)::before, #categories a:nth-child(3n)::before { margin: 0 7px; }
 }
+
+/* ───── Typographie grotesque neutre, façon Helvetica ─────
+   Une seule famille, petits corps, interligne serré, légendes en capitales.
+   Jour / nuit : on inverse les deux couleurs de fond et de texte. */
+:root {
+  --grotesque: "Neue Haas Grotesk Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --affiche: var(--grotesque); --etroit: var(--grotesque); --machine: var(--grotesque); --pixel: var(--grotesque);
+}
+:root[data-theme="jour"] { --noir: #ffffff; --blanc: #111111; --vert: #12a33a; --gris: #6f6f6f; color-scheme: light; }
+body { font-family: var(--grotesque); font-size: 13px; line-height: 1.1; letter-spacing: .01em; -webkit-font-smoothing: antialiased; }
+
+/* Menu */
+.menu { font-family: var(--grotesque); font-size: 13px; font-weight: 400; letter-spacing: .01em; line-height: 1.1; padding: 14px 110px 12px; background: var(--noir); }
+.menu a + a::before, #categories + a::before,
+#categories a:nth-child(3n+2)::before, #categories a:nth-child(3n)::before { content: "·"; font-family: var(--grotesque); margin: 0 9px; }
+
+/* Pastille jour / nuit */
+.bascule {
+  position: fixed; z-index: 7; top: calc(10px + env(safe-area-inset-top, 0px)); right: max(12px, env(safe-area-inset-right, 0px));
+  font: 700 12px/1 var(--grotesque); letter-spacing: .01em; padding: 5px 8px 4px;
+  background: var(--blanc); color: var(--noir); border: 0; border-radius: 3px; cursor: pointer;
+}
+.bascule:hover { background: var(--vert); color: var(--noir); }
+
+/* Titres des lignes : petites capitales */
+.liste { gap: 14px; }
+.ligne h2 { font-family: var(--grotesque); font-size: 10px; font-weight: 400; text-transform: uppercase; letter-spacing: .03em; line-height: 1.3; margin: 0 0 5px 2px; opacity: .85; }
+.ligne h2::after { content: none; }
+.ligne:hover h2 { opacity: 1; }
+
+/* Page projet */
+.credits { font-family: var(--grotesque); font-size: 11px; text-transform: uppercase; letter-spacing: .03em; line-height: 1.35; font-weight: 400; }
+.credits p:first-child { font-family: var(--grotesque); font-size: 13px; letter-spacing: .01em; text-transform: none; margin-bottom: 8px; line-height: 1.1; }
+.credits .desc { font-family: var(--grotesque); font-style: normal; font-size: 11px; text-transform: none; }
+.lien-ext a, .retour a { font-family: var(--grotesque); font-size: 13px; }
+
+/* Signature */
+.signature { display: grid; gap: 2px; justify-items: end; text-align: right; bottom: calc(14px + env(safe-area-inset-bottom, 0px)); right: max(14px, env(safe-area-inset-right, 0px)); }
+.signature b { font-family: var(--grotesque); font-weight: 400; font-size: 13px; letter-spacing: .01em; }
+.signature .mention { font-family: var(--grotesque); font-size: 10px; letter-spacing: .03em; text-transform: uppercase; }
+
+/* À propos / contact */
+.page-texte { font-family: var(--grotesque); font-size: 15px; line-height: 1.3; font-weight: 400; }
+.services { font-family: var(--grotesque); font-size: 11px; text-transform: uppercase; letter-spacing: .03em; }
+.services b { font-family: var(--grotesque); font-size: 13px; text-transform: none; letter-spacing: .01em; }
+.contact > p:first-of-type { font-family: var(--grotesque); font-size: 10px; letter-spacing: .03em; }
+.mail { font-family: var(--grotesque); font-size: clamp(18px, 3vw, 30px); letter-spacing: 0; }
+.copier, .vide { font-family: var(--grotesque); font-size: 12px; }
+.liens { font-family: var(--grotesque); font-size: 13px; letter-spacing: .01em; }
+
+@media (max-width: 700px) {
+  .menu { padding: 12px 64px 10px 12px; justify-content: flex-start; font-size: 13px; }
+  .menu a + a::before, #categories + a::before,
+  #categories a:nth-child(3n+2)::before, #categories a:nth-child(3n)::before { margin: 0 6px; }
+}
+.signature { background: var(--noir); padding: 6px 8px 5px; border-radius: 3px; }

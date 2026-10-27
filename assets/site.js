@@ -167,6 +167,20 @@
     im.remove();
   }, true);
 
+  // Jour / nuit : bouton en haut à droite, choix mémorisé dans le navigateur
+  var bascule = document.getElementById('bascule');
+  function majBascule() {
+    var jour = document.documentElement.dataset.theme === 'jour';
+    if (bascule) { bascule.textContent = jour ? 'nuit' : 'jour'; bascule.setAttribute('aria-label', jour ? 'passer en mode nuit' : 'passer en mode jour'); }
+  }
+  if (bascule) bascule.addEventListener('click', function () {
+    var jour = document.documentElement.dataset.theme !== 'jour';
+    if (jour) document.documentElement.dataset.theme = 'jour'; else delete document.documentElement.dataset.theme;
+    try { localStorage.setItem('theme', jour ? 'jour' : 'nuit'); } catch (e) {}
+    majBascule();
+  });
+  majBascule();
+
   var copier = document.getElementById('copier');
   if (copier) copier.addEventListener('click', function () {
     var t = document.getElementById('mail').textContent;
