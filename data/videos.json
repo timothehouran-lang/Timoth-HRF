@@ -97,7 +97,10 @@
       "annee": "2025",
       "categorie": "Gaffer",
       "role": "Chef électricien",
-      "credits": "Directed by Roxanne Gaucherand\n\nProduction Company: PRISM"
+      "credits": "Directed by Roxanne Gaucherand\n\nProduction Company: PRISM",
+      "images": [
+        "/media/image-18.jpg"
+      ]
     },
     {
       "titre": "WAVES",
