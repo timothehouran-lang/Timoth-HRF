@@ -26,25 +26,23 @@
     {
       "titre": "Plein Cagnard",
       "lien": "https://vimeo.com/1022115270",
-      "categorie": "Cinematographer",
-      "description": "Court métrage. Vidéo protégée par mot de passe sur Vimeo.",
+      "annee": "2023",
+      "categorie": "Gaffer",
+      "role": "Chef électricien",
       "images": [
         "/media/plein-cagnard-1.jpg",
-        "/media/plein-cagnard-2.jpg",
-        "/media/plein-cagnard-3.jpg"
+        "/media/Capture d’écran 2025-02-21 à 09.40.10.png",
+        "/media/Capture d’écran 2025-02-21 à 09.41.11.png"
       ]
     },
     {
       "titre": "Beauty Arena",
       "lien": "https://vimeo.com/1122984655",
-      "categorie": "Cinematographer",
+      "annee": "2024",
+      "categorie": "Gaffer",
+      "role": "Chef électricien",
       "credits": "Lysa Thieffry · LEFT",
-      "description": "Film de mode, 1 min 56.",
-      "images": [
-        "/media/beauty-arena-1.jpg",
-        "/media/beauty-arena-2.jpg",
-        "/media/beauty-arena-3.jpg"
-      ]
+      "description": "Film de mode, 1 min 56."
     },
     {
       "titre": "James Loup, J'voulais être grand",
