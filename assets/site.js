@@ -83,7 +83,9 @@
     if (page === 'accueil') accueil(videos, cats, zone);
 
     var bio = document.getElementById('bio');
-    if (bio && site.bio) bio.innerHTML = String(site.bio).split(/\n\s*\n/).map(function (p) { return '<p>' + esc(p.trim()) + '</p>'; }).join('');
+    // Texte de la page À propos : la phrase d'accueil puis le texte, retours à la ligne conservés
+    var texte = [site.accroche, site.bio].filter(function (t) { return t && String(t).trim(); }).join('\n\n');
+    if (bio && texte) bio.innerHTML = String(texte).split(/\n\s*\n/).map(function (p) { return '<p>' + esc(p.trim()).replace(/\n/g, '<br>') + '</p>'; }).join('');
     var photo = document.getElementById('photo');
     if (photo && site.photo) photo.innerHTML = '<img class="portrait" src="' + esc(chemin(site.photo)) + '" alt="portrait de ' + esc(site.nom) + '">';
     var services = document.getElementById('services');
