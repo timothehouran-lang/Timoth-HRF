@@ -177,9 +177,11 @@
 
   // Jour / nuit : bouton en haut à droite, choix mémorisé dans le navigateur
   var bascule = document.getElementById('bascule');
+  var SOLEIL = '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>';
+  var LUNE = '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg>';
   function majBascule() {
     var jour = document.documentElement.dataset.theme === 'jour';
-    if (bascule) { bascule.textContent = jour ? 'nuit' : 'jour'; bascule.setAttribute('aria-label', jour ? 'passer en mode nuit' : 'passer en mode jour'); }
+    if (bascule) { bascule.innerHTML = jour ? LUNE : SOLEIL; bascule.setAttribute('aria-label', jour ? 'passer en mode nuit' : 'passer en mode jour'); }
   }
   if (bascule) bascule.addEventListener('click', function () {
     var jour = document.documentElement.dataset.theme !== 'jour';
