@@ -170,3 +170,26 @@ body { font-family: var(--etroit); font-size: 18px; }
 @media (prefers-reduced-motion: reduce) { .orbite { animation: none; } }
 .signature { gap: 46px; bottom: calc(40px + env(safe-area-inset-bottom, 0px)); right: max(24px, env(safe-area-inset-right, 0px)); }
 @media (max-width: 700px) { .signature { gap: 34px; bottom: calc(30px + env(safe-area-inset-bottom, 0px)); } }
+
+/* ───── Menu épuré : lisible, sur une ligne, interligne serré ───── */
+.menu {
+  font-family: var(--etroit); font-size: clamp(17px, 1.5vw, 21px); letter-spacing: .01em; line-height: 1.15;
+  gap: 2px 0; padding-top: 14px; padding-bottom: 12px;
+}
+.menu a + a::before, #categories + a::before,
+#categories a:nth-child(3n+2)::before, #categories a:nth-child(3n)::before {
+  content: "·"; font-family: var(--etroit); font-style: normal; font-size: 1em; letter-spacing: 0; margin: 0 12px;
+}
+.liste { gap: 10px; }
+.ligne h2 { line-height: 1.05; margin-bottom: 3px; }
+.texte-sig b { letter-spacing: .08em; }
+.liens { letter-spacing: .04em; }
+.liens a + a::before { content: "·"; font-style: normal; }
+.mail { letter-spacing: .02em; }
+.credits p:first-child { letter-spacing: .06em; }
+.page-texte { line-height: 1.25; }
+@media (max-width: 700px) {
+  .menu { font-size: 16px; letter-spacing: 0; }
+  .menu a + a::before, #categories + a::before,
+  #categories a:nth-child(3n+2)::before, #categories a:nth-child(3n)::before { margin: 0 7px; }
+}
