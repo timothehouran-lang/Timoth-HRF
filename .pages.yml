@@ -29,13 +29,13 @@ content:
             label: Mon rôle
             type: string
           - name: credits
-            label: Crédits (une ligne par personne, ex. réalisation : nom)
+            label: "Crédits (une ligne par personne, ex. réalisation : nom)"
             type: text
           - name: description
             label: Description
             type: text
           - name: images
-            label: Photogrammes (3 images carrées conseillées ; sinon celles de YouTube)
+            label: "Images (la première sert de vignette ; sinon celle de YouTube)"
             type: image
             list: true
 
