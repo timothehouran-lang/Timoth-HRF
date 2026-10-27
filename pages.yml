@@ -1,0 +1,92 @@
+media: media
+
+content:
+  - name: videos
+    label: Vidéos
+    type: file
+    path: data/videos.json
+    fields:
+      - name: videos
+        label: Mes vidéos
+        type: object
+        list: true
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: lien
+            label: Lien YouTube ou Vimeo
+            type: string
+          - name: annee
+            label: Année
+            type: string
+          - name: categorie
+            label: Catégorie
+            type: select
+            options:
+              values: [Bande démo, Fiction, Clip, Mode, Pochette, Captation, Documentaire, Pub, Photographie]
+          - name: role
+            label: Mon rôle
+            type: string
+          - name: credits
+            label: Crédits (une ligne par personne, ex. réalisation : nom)
+            type: text
+          - name: description
+            label: Description
+            type: text
+          - name: images
+            label: Photogrammes (3 images carrées conseillées ; sinon celles de YouTube)
+            type: image
+            list: true
+
+  - name: site
+    label: Infos du site
+    type: file
+    path: data/site.json
+    fields:
+      - name: nom
+        label: Nom
+        type: string
+      - name: metier
+        label: Métier (sous ton nom)
+        type: string
+      - name: ville
+        label: Ville
+        type: string
+      - name: accroche
+        label: Phrase d'accueil
+        type: text
+      - name: bio
+        label: Texte de la page À propos
+        type: text
+      - name: photo
+        label: Portrait
+        type: image
+      - name: email
+        label: Adresse mail
+        type: string
+      - name: services
+        label: Services
+        type: object
+        list: true
+        fields:
+          - name: etape
+            label: Étape
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+          - name: texte
+            label: Texte
+            type: text
+      - name: liens
+        label: Liens (réseaux, IMDb…)
+        type: object
+        list: true
+        fields:
+          - name: nom
+            label: Nom
+            type: string
+          - name: url
+            label: Adresse
+            type: string
