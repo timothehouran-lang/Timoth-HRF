@@ -39,6 +39,19 @@
       ]
     },
     {
+      "titre": "WAVES",
+      "lien": "https://youtu.be/wFH_rosSTJM",
+      "annee": "2025",
+      "categorie": "Cinematographer",
+      "role": "DOP",
+      "credits": "Directed by Jason Mougamadou Abdullah",
+      "images": [
+        "/media/image-17.jpg",
+        "/media/image-26-1.jpg",
+        "/media/image-09.jpg"
+      ]
+    },
+    {
       "titre": "Ange Halliwell, Spirit are you here ?",
       "lien": "https://www.youtube.com/watch?v=ubqZfBmJFI0",
       "annee": "2025",
@@ -50,15 +63,16 @@
       ]
     },
     {
-      "titre": "WAVES",
-      "lien": "https://youtu.be/wFH_rosSTJM",
+      "titre": "Manon Bouquet “Beginning”",
+      "lien": "https://vimeo.com/1211930305?fl=pl&fe=cm",
       "annee": "2025",
-      "categorie": "Cinematographer",
-      "role": "DOP",
-      "credits": "Directed by Jason Mougamadou Abdullah",
+      "categorie": "Gaffer",
+      "role": "Gaffer",
+      "credits": "Beginning by Manon Bouquet \n\nPRODUCED BY ABSOLT Absolt\n\nDOP : Jean-Charles Baravian",
       "images": [
-        "/media/image-17.jpg",
-        "/media/image-26-1.jpg"
+        "/media/Capture d’écran 2026-10-28 à 11.41.29.png",
+        "/media/Capture d’écran 2026-10-28 à 11.42.41.png",
+        "/media/Capture d’écran 2026-10-28 à 11.42.05.png"
       ]
     },
     {
@@ -72,14 +86,6 @@
       "images": [
         "/media/beauty-arena-titre.jpg"
       ]
-    },
-    {
-      "titre": "Manon Bouquet “Beginning”",
-      "lien": "https://vimeo.com/1211930305?fl=pl&fe=cm",
-      "annee": "2025",
-      "categorie": "Gaffer",
-      "role": "Gaffer",
-      "credits": "Beginning by Manon Bouquet \n\nPRODUCED BY ABSOLT Absolt\n\nDOP : Jean-Charles Baravian"
     },
     {
       "titre": "Plein Cagnard",
