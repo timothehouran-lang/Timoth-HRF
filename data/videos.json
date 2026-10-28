@@ -7,7 +7,9 @@
       "role": "Chef opérateur",
       "description": "Extraits de mon travail à l'image.",
       "images": [
-        "/media/image0-1.jpeg"
+        "/media/image0.jpeg",
+        "/media/image-24.jpg",
+        "/media/image-25.jpg"
       ]
     },
     {
@@ -16,7 +18,7 @@
       "annee": "2024",
       "categorie": "Cinematographer",
       "role": "DOP",
-      "credits": "Directed by Roxane Misse\nProduced byFatih Öztosun",
+      "credits": "Directed by Roxane Misse\nProduced by Fatih Öztosun",
       "images": [
         "/media/beauty-arena-portrait.jpg",
         "/media/image-08.jpg",
@@ -56,8 +58,7 @@
       "credits": "Directed by Jason Mougamadou Abdullah",
       "images": [
         "/media/image-17.jpg",
-        "/media/image-13.jpg",
-        "/media/image-09.jpg"
+        "/media/image-26-1.jpg"
       ]
     },
     {
@@ -91,7 +92,12 @@
       "annee": "2025",
       "categorie": "Gaffer",
       "role": "Chef électricien",
-      "credits": "Réalisateurs: Luc Méneret et Antoine Vasseur\n\nProduit par : TIE BREAK / TRIPLE-DOUBLE / FULL OPTION"
+      "credits": "Réalisateurs: Luc Méneret et Antoine Vasseur\n\nProduit par : TIE BREAK / TRIPLE-DOUBLE / FULL OPTION",
+      "images": [
+        "/media/image-28.jpg",
+        "/media/image-27.jpg",
+        "/media/image-29-1.jpg"
+      ]
     },
     {
       "titre": "Laissez-moi danser",
