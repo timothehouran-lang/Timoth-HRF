@@ -24,19 +24,6 @@
       ]
     },
     {
-      "titre": "Plein Cagnard",
-      "lien": "https://vimeo.com/1022115270",
-      "annee": "2023",
-      "categorie": "Gaffer",
-      "role": "Chef électricien",
-      "credits": "MDP : LudwigFemis2024\n\nRéalisé par Titouan Ropert\nProduit par Marisol Crisan & Shaeera Kalla\n",
-      "images": [
-        "/media/Capture d’écran 2025-02-21 à 09.35.42-1.png",
-        "/media/Capture d’écran 2025-02-21 à 09.40.10.png",
-        "/media/Capture d’écran 2025-02-21 à 09.41.11.png"
-      ]
-    },
-    {
       "titre": "Sosu Inn - Ghost Field",
       "lien": "https://www.youtube.com/watch?v=6zu-xyKnjkQ&list=RD6zu-xyKnjkQ&start_radio=1",
       "annee": "2023",
@@ -50,6 +37,30 @@
       ]
     },
     {
+      "titre": "Ange Halliwell, Spirit are you here ?",
+      "lien": "https://www.youtube.com/watch?v=ubqZfBmJFI0",
+      "annee": "2025",
+      "categorie": "Gaffer",
+      "role": "Chef électricien",
+      "credits": "Directed by Roxanne Gaucherand\n\nProduction Company: PRISM",
+      "images": [
+        "/media/image-18.jpg"
+      ]
+    },
+    {
+      "titre": "WAVES",
+      "lien": "https://youtu.be/wFH_rosSTJM",
+      "annee": "2025",
+      "categorie": "Cinematographer",
+      "role": "DOP",
+      "credits": "Directed by Jason Mougamadou Abdullah",
+      "images": [
+        "/media/image-17.jpg",
+        "/media/image-13.jpg",
+        "/media/image-09.jpg"
+      ]
+    },
+    {
       "titre": "Beauty Arena",
       "lien": "https://vimeo.com/1122984655",
       "annee": "2024",
@@ -59,6 +70,19 @@
       "description": "Film de mode, 1 min 56.",
       "images": [
         "/media/beauty-arena-titre.jpg"
+      ]
+    },
+    {
+      "titre": "Plein Cagnard",
+      "lien": "https://vimeo.com/1022115270",
+      "annee": "2023",
+      "categorie": "Gaffer",
+      "role": "Chef électricien",
+      "credits": "MDP : LudwigFemis2024\n\nRéalisé par Titouan Ropert\nProduit par Marisol Crisan & Shaeera Kalla\n",
+      "images": [
+        "/media/Capture d’écran 2025-02-21 à 09.35.42-1.png",
+        "/media/Capture d’écran 2025-02-21 à 09.40.10.png",
+        "/media/Capture d’écran 2025-02-21 à 09.41.11.png"
       ]
     },
     {
@@ -90,30 +114,6 @@
       "categorie": "Gaffer",
       "role": "Chef électricien",
       "credits": "Réalisé par Luc Méneret et Antoine Vasseur\nProduit par FULL OPTION PRODUCTIONS / TRIPLE-DOUBLE / TIE BREAK "
-    },
-    {
-      "titre": "Ange Halliwell, Spirit are you here ?",
-      "lien": "https://www.youtube.com/watch?v=ubqZfBmJFI0",
-      "annee": "2025",
-      "categorie": "Gaffer",
-      "role": "Chef électricien",
-      "credits": "Directed by Roxanne Gaucherand\n\nProduction Company: PRISM",
-      "images": [
-        "/media/image-18.jpg"
-      ]
-    },
-    {
-      "titre": "WAVES",
-      "lien": "https://youtu.be/wFH_rosSTJM",
-      "annee": "2025",
-      "categorie": "Cinematographer",
-      "role": "DOP",
-      "credits": "Directed by Jason Mougamadou Abdullah",
-      "images": [
-        "/media/image-13.jpg",
-        "/media/image-17.jpg",
-        "/media/image-09.jpg"
-      ]
     }
   ]
 }
