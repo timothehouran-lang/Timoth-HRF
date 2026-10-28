@@ -18,7 +18,7 @@
       "annee": "2024",
       "categorie": "Cinematographer",
       "role": "DOP",
-      "credits": "Directed by Roxane Misse\nProduced by Fatih Öztosun",
+      "credits": "Directed by Roxane Misse\n\nProduced by Fatih Öztosun\n\nDOP : Timothé Hourant Faivre",
       "images": [
         "/media/beauty-arena-portrait.jpg",
         "/media/image-08.jpg",
@@ -44,7 +44,7 @@
       "annee": "2025",
       "categorie": "Gaffer",
       "role": "Chef électricien",
-      "credits": "Directed by Roxanne Gaucherand\n\nProduction Company: PRISM",
+      "credits": "Directed by Roxanne Gaucherand\n\nProduction Company: PRISM\n\nDOP : Lucas Minier",
       "images": [
         "/media/image-18.jpg"
       ]
@@ -67,11 +67,19 @@
       "annee": "2024",
       "categorie": "Gaffer",
       "role": "Chef électricien",
-      "credits": "Lysa Thieffry · LEFT",
+      "credits": "Lysa Thieffry · LEFT\n\nDOP : Maxime Kathari",
       "description": "Film de mode, 1 min 56.",
       "images": [
         "/media/beauty-arena-titre.jpg"
       ]
+    },
+    {
+      "titre": "Manon Bouquet “Beginning”",
+      "lien": "https://vimeo.com/1211930305?fl=pl&fe=cm",
+      "annee": "2025",
+      "categorie": "Gaffer",
+      "role": "Gaffer",
+      "credits": "Beginning by Manon Bouquet \n\nPRODUCED BY ABSOLT Absolt\n\nDOP : Jean-Charles Baravian"
     },
     {
       "titre": "Plein Cagnard",
@@ -120,14 +128,6 @@
       "categorie": "Gaffer",
       "role": "Chef électricien",
       "credits": "Réalisé par Luc Méneret et Antoine Vasseur\nProduit par FULL OPTION PRODUCTIONS / TRIPLE-DOUBLE / TIE BREAK \nDOP : Lucas MinierLucas Minier"
-    },
-    {
-      "titre": "Manon Bouquet “Beginning”",
-      "lien": "https://vimeo.com/1211930305?fl=pl&fe=cm",
-      "annee": "2025",
-      "categorie": "Gaffer",
-      "role": "Gaffer",
-      "credits": "Beginning by Manon Bouquet \n\nPRODUCED BY ABSOLT Absolt\n\nDOP : Jean-Charles Baravian"
     }
   ]
 }
