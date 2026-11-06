@@ -136,6 +136,36 @@
       "categorie": "Gaffer",
       "role": "Chef électricien",
       "credits": "Réalisé par Luc Méneret et Antoine Vasseur\nProduit par FULL OPTION PRODUCTIONS / TRIPLE-DOUBLE / TIE BREAK \nDOP : Lucas MinierLucas Minier"
+    },
+    {
+      "titre": "Fashion Edito",
+      "annee": "2025",
+      "categorie": "Photography",
+      "role": "Light Designer ",
+      "credits": "Photographer: Rose Davies\n@rosedavies.stu\nLight designer: Timothé Hourant Faivre\nDA: Rose Davies & Timothé Hourant Faivre",
+      "description": "Rose personal project ",
+      "images": [
+        "/media/image-32.jpg",
+        "/media/image-35.jpg",
+        "/media/image-33.jpg",
+        "/media/image-34.jpg",
+        "/media/image-31.jpg",
+        "/media/image-30.jpg"
+      ]
+    },
+    {
+      "titre": "Press Pic",
+      "annee": "2023",
+      "categorie": "Photography",
+      "role": "Light Designer",
+      "credits": "Photographer and DA: Tristan Conchon \n@tristanconchon",
+      "description": "Press pick for the @damna",
+      "images": [
+        "/media/image-37.jpg",
+        "/media/image-52-1.jpg",
+        "/media/image-44.jpg",
+        "/media/image-36.jpg"
+      ]
     }
   ]
 }
